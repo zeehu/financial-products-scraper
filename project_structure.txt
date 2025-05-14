@@ -1,0 +1,19 @@
+项目结构：
+/financial_products_scraper
+    /scrapers                  # 存放各个理财公司的爬虫
+        __init__.py
+        base_scraper.py        # 基础爬虫类
+        webank_scraper.py      # 微众银行爬虫
+        # 其他理财公司爬虫...
+    /models                    # 数据库模型
+        __init__.py
+        database.py            # 数据库连接管理
+        product.py             # 产品模型
+        daily_return.py        # 每日收益模型
+    /utils                     # 工具函数
+        __init__.py
+        parser.py              # 解析工具
+        date_utils.py          # 日期处理工具
+    main.py                    # 主程序
+    requirements.txt           # 依赖包
+    README.md                  # 项目说明 
